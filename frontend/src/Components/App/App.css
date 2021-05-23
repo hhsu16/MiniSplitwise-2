@@ -1,0 +1,135 @@
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Reusable Component - Image Container */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* App Styles */
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  padding: 0.66rem 0;
+  text-align: center;
+  background-color: #cca353;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+}
+*{
+  font-size: calc(14px + (22 - 14) * ((100vw - 400px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.4 - 1.0) * ((100vw - 400px)/(1600 - 300)));
+  text-align: center;
+}
+.dashContent{
+  padding: 1.5rem;
+}
+
+.btn-group{
+  min-width: 75%;
+
+}
+.btn-yellow{
+  background-color: #fcf7ad;
+  color: #343a40;
+  width: 33.3%;
+}
+
+.btn-yellow-dashboard{
+  background-color: #fcf7ad;
+  color: #343a40;
+  width: 50%;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+  color: #343a40;
+  background-color: #ffe600;
+  border-color: #343a40;
+  font-weight: bolder;
+}
+
+.focus{
+  background-color: rgb(255, 234, 116);
+}
+
+.dashBody {
+  text-align: center;
+
+}
+
+.table .thead-secondary th {
+  color: #343a40;
+  background-color: #ffe600;
+  border-color: #32383e;
+  padding: 5px;
+  width: 33.3%;
+}
+
+.table tr th td {
+  padding: 0;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.bg-yellow{
+  background-color: #ffe600;
+  margin-top: -30px;
+}
+
+.dashLeft{
+  width: auto;
+  height: 85vh;
+  background-color: #dee2e6;
+}
+
+.dashRight{
+  padding-left: 15px;
+}
+
+.navbar{
+  margin: 0;
+}
+
+
+.text{
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: rgb(253, 253, 186);
+}
+
+.table3 thead th {
+  vertical-align: bottom;
+  width: 33.3%;
+}
+
+.table6 thead th {
+  vertical-align: bottom;
+  width: 16.6%;
+}
