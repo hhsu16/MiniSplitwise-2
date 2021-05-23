@@ -1,16 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-import './index.css';
-import App from '../src/Components/App/App';
-import * as serviceWorker from './serviceWorker';
-import 'typeface-roboto';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById('root')
-);
-
-serviceWorker.unregister();
+//render App component on the root element
+ReactDOM.render(<App />, document.getElementById("root"));
+registerServiceWorker();
